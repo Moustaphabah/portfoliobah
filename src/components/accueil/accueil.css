@@ -1,0 +1,139 @@
+.accueil {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centre verticalement */
+  align-items: center;       /* centre horizontalement */
+  min-height: 100vh;         
+  padding: 2rem;             /* un peu plus que 2px pour respirer */
+  text-align: center;
+  gap: 1.5rem;               /* espace uniforme entre tous les éléments */
+}
+
+.bonjour {
+  font-size: 100px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nom {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(to right, #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.accueil-description {
+  font-size: 20px;
+  color: #928f87;
+  max-width: 700px;          /* limite la largeur pour une meilleure lisibilité */
+  line-height: 1.6;          /* espacement entre les lignes */
+  margin: 0;
+}
+
+.bouton-voir-projets {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;              /* si c’est un bouton HTML simple */
+  border-radius: 6px;
+  background-color: #ffc52c;
+  color: #0d0d0d;
+  transition: all 0.3s ease;
+}
+
+.bouton-voir-projets:hover {
+  background-color: #ff9a05;
+  transform: scale(1.05);
+
+}
+.boutons-accueil {
+  display: flex;          /* active flexbox */
+  gap: 1rem;              /* espace entre les boutons */
+  justify-content: center;/* centre les boutons horizontalement */
+  flex-wrap: wrap;        /* sur mobile, les boutons passent à la ligne si nécessaire */
+}
+
+
+.melting-text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.melting-text {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(90deg, #ff6f61, #ffbd44, #ff6f61);
+  -webkit-background-clip: text;
+  position: relative;
+  animation: melt 3s infinite ease-in-out;
+}
+
+.melting-text::before,
+.melting-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6f61, #ffbd44, #ff6f61);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: -1;
+  transform: scaleY(1);
+  opacity: 0.5;
+  animation: drip 3s infinite ease-in-out;
+}
+
+.melting-text::after {
+  filter: blur(10px);
+  opacity: 0.3;
+}
+
+@keyframes melt {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+@keyframes drip {
+  0%, 100% { transform: scaleY(1); opacity: 0.5; }
+  50% { transform: scaleY(1.5); opacity: 0.7; }
+}
+
+
+
+/* Optionnel : ciblage plus précis pour cette section */
+.accueil .bonjour {
+ 
+  position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    
+   
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+
+animation: 
+    typewriter 5s steps(50) 0.1s  normal both, 
+    blinkingCursor 400ms steps(50) 10 normal both;
+
+  
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: #ffbd44; }
+  to { border-right-color: transparent; }
+}

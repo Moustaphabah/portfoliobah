@@ -1,0 +1,52 @@
+/* Grid and project list styles for Projects component */
+.projects-section {
+ background-color: #1a1a1a;
+  padding: 2rem 1rem;
+}
+
+.projects-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+    justify-content: center; /* centre la grille horizontalement */
+    justify-items: center; /* centre les éléments dans leurs cellules */
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.projects-title {
+  /* applique un dégradé au texte */
+  background: linear-gradient(to right, #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 4.1rem;
+}
+
+
+.project-tech{
+  display: flex;
+  background: linear-gradient(to right, #ffc52c, #ff9a05);
+  justify-content: center;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.projects-contenu {
+  color: #928f87;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}

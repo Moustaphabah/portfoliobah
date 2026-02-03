@@ -1,0 +1,25 @@
+footer {
+  
+  background-color: #12131F; /* couleur de fond */           /* texte en blanc pour contraste */
+}
+
+.FooterLinkGroup {
+ background: linear-gradient(to right, #ffc52c, #ff9a05);;
+
+}
+
+
+
+
+.lienFooter {
+   background: linear-gradient(to right,  #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.scroll-top-button {
+  background: linear-gradient(to right,  #ffc52c, #ff9a05);
+   border-radius: 5px;
+
+}

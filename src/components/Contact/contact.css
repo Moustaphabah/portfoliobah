@@ -1,0 +1,104 @@
+
+.contact-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 600px;
+  margin-bottom: 1rem;
+   border: 5px solid #ff9a05; 
+   border-radius: 20px;
+  padding: 2rem;
+  box-shadow: #ff9a05 0px 0px 10px;
+}
+/* apply to inputs/textareas inside the contact section */
+#contact input,
+#contact textarea {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #ffffff; /* fond blanc pour que le texte noir soit lisible */
+  color: #000000; /* texte en noir */
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #6b7280; /* placeholder gris foncé */
+}
+
+#contact {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem; /* réduit pour ne pas pousser les sections suivantes trop bas */
+  justify-content: center;
+
+}
+
+.contact-form span   {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right,  #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-info {
+  max-width: 400px;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  max-width: 300px; /* largeur fixe pour la colonne infos */
+  border: 5px solid #ff9a05; 
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: #ff9a05 0px 0px 10px;
+}
+
+.contact-form p {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 600px
+}
+#contact h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: center; /* centre horizontalement le contenu global */
+  align-items: flex-start; /* aligne le haut des colonnes */
+  gap: 3rem; /* espace entre les deux colonnes */
+}
+
+
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column; /* empile les li verticalement */
+  gap: 1.5rem;            /* espace entre chaque li */
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+/* bouton du formulaire de contact - plus spécifique que la règle globale */
+#contact .contact-form button {
+ background: linear-gradient(to right, #ffc52c, #ff9a05);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.text-center-p-4 {
+  border: 5px solid #ff9a05; 
+   border-radius: 20px;
+  box-shadow: #ff9a05 0px 0px 10px;
+ 
+}
+
+

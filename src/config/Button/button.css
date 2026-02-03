@@ -1,0 +1,83 @@
+.accueil {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement */
+  min-height: 100vh;       /* occupe toute la hauteur de la fenêtre */
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  background-color: #0d0d0d;
+}
+
+.contenu-accueil {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;            /* espace uniforme entre texte et boutons */
+}
+
+.bonjour {
+  font-size: 32px;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.nom {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(to right, #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.accueil-description {
+  font-size: 20px;
+  color: #928f87;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Conteneur boutons */
+.boutons-accueil {
+  display: flex;
+  gap: 1rem;             /* espace entre les boutons */
+  justify-content: center;
+  flex-wrap: wrap;        /* boutons passent à la ligne sur mobile */
+}
+
+/* Bouton jaune / Voir mes projets */
+.bouton-voir-projets {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(to right, #ffc52c, #ff9a05);
+  color: #0d0d0d;
+  transition: all 0.3s ease;
+}
+
+.bouton-voir-projets:hover {
+  transform: scale(1.05);
+}
+
+/* Bouton noir / En savoir plus */
+.bouton-en-savoir-plus {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid #ffc52c;
+  background-color: #0d0d0d; 
+  color: #ffc52c;
+  transition: all 0.3s ease;
+}
+
+.bouton-en-savoir-plus:hover {
+  background-color: #ffc52c;
+  color: #0d0d0d;
+  transform: scale(1.05);
+}

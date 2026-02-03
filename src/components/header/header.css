@@ -1,0 +1,59 @@
+.site-footer {
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.Menu {
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  background-color: #000;
+  padding: 0 1rem;
+}
+.Menu__list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Menu p {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.Menu__list a {
+  color: #fff;
+  text-decoration: none;
+}
+.portfolio {
+   font-size: 1.5rem;
+   background: linear-gradient(to right,  #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+  
+  
+}
+.contact-button {
+
+  background: linear-gradient(to right,  #ffc52c, #ff9a05);
+
+}
