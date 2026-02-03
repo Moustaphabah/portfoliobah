@@ -1,4 +1,4 @@
-import React from "react";
+
 import './footer.css';
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react";
@@ -13,9 +13,9 @@ export function Component() {
     <Footer container>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <FooterBrand
+          <FooterBrand className="footerBrandPortfolio"
             href="Portfolio"
-            src=""
+            src="src/assets/1-f273d416.ico"
             alt="Portfolio"
             name="Portfolio"
           />
@@ -30,7 +30,7 @@ export function Component() {
 
         {/* Section Copyright + Bouton “Remonter” */}
         <div className="flex justify-center items-center gap-4">
-          <FooterCopyright href="#"  year={2026} />
+          <FooterCopyright href="#" by="Moustapha Bah" year={2026} />
 
           {/* Bouton flèche vers le haut */}
           <button 

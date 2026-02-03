@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Modal from "../../config/Button/modal";
-import Button from "../../config/button/button";
+import Button from "./Button";
+
 
 const SuccessModalView: React.FC = () => {
   const [isSuccessOpen, setIsSuccessOpen] = useState(false);
@@ -14,17 +15,15 @@ const SuccessModalView: React.FC = () => {
       <div className="flex flex-wrap gap-3">
         <Button
           onClick={() => setIsSuccessOpen(true)}
-          variant="default"
           className="bg-green-500 hover:bg-green-600"
         >
           Success Message
         </Button>
-        <Button onClick={() => setIsCompletionOpen(true)} variant="default">
+        <Button onClick={() => setIsCompletionOpen(true)}>
           Task Completion
         </Button>
         <Button
           onClick={() => setIsAchievementOpen(true)}
-          variant="default"
           className="bg-purple-500 hover:bg-purple-600"
         >
           Achievement Unlocked
@@ -67,7 +66,6 @@ const SuccessModalView: React.FC = () => {
           <div className="pt-2">
             <Button
               onClick={() => setIsSuccessOpen(false)}
-              variant="default"
               className="bg-green-500 hover:bg-green-600"
             >
               Continue
@@ -124,13 +122,11 @@ const SuccessModalView: React.FC = () => {
           <div className="flex justify-center space-x-3">
             <Button
               onClick={() => setIsCompletionOpen(false)}
-              variant="secondary"
             >
               Later
             </Button>
             <Button
               onClick={() => setIsCompletionOpen(false)}
-              variant="default"
             >
               Get Started
             </Button>
@@ -213,9 +209,7 @@ const SuccessModalView: React.FC = () => {
           <div>
             <Button
               onClick={() => setIsAchievementOpen(false)}
-              variant="default"
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transform hover:scale-105"
-              size="lg"
             >
               Awesome!
             </Button>

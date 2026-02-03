@@ -55,7 +55,7 @@ function Marquee({
   const animX = useRef<number>(0);
   const isPaused = useRef<boolean>(false);
 
-  useAnimationFrame((t, delta) => {
+  useAnimationFrame((_, delta) => {
     if (!containerRef.current || !contentRef.current || !singleContentBlockRef.current) return;
     
     if (pauseOnHover && isPaused.current) {
@@ -101,7 +101,7 @@ function Marquee({
       {...props}
       ref={containerRef}
       className={cn(
-        "group flex overflow-hidden p-2 [--gap:2rem] [gap:var(--gap)]" +
+        "group flex overflow-hidden p-2 [--gap:2rem] [gap:var(--gap)] skillcard" +
           (vertical ? " flex-col" : " flex-row"),
         className,
       )}

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./contact.css";
 import Modal from "../../config/Button/modal";
 
 function Contact() {
   const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     setIsSuccessOpen(true);
   };

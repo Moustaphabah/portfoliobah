@@ -124,7 +124,7 @@
 
 animation: 
     typewriter 5s steps(50) 0.1s  normal both, 
-    blinkingCursor 400ms steps(50) 10 normal both;
+    blinkingCursor 500ms steps(50) 10 normal both;
 
   
 }

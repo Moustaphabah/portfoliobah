@@ -36,7 +36,7 @@ const projects = [
     J’ai utilisé des outils comme Lighthouse et Wave pour évaluer l’efficacité des améliorations, et j’ai produit un rapport comparatif avant et après, illustrant les résultats et expliquant l’impact des changements sur la performance,
      l’accessibilité et le référencement`,
     image: projetDeux,
-    tech: [<FaHtml5 />, <FaCss3Alt />, <SiLighthouse />],
+    tech: [<FaHtml5 size={70} />, <FaCss3Alt />, <SiLighthouse />],
     github: 'https://moustaphabah.github.io/nina/',
     live:''
   },

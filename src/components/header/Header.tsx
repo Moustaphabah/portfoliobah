@@ -1,8 +1,8 @@
-import React from 'react';
+
 import Button from "../../config/Button/Button";
 import "./header.css";
 
-const Menu = (): JSX.Element => (
+const Menu = () => (
   <nav className="Menu">
     <p className="portfolio">Portfolio</p>
     <ul className="Menu__list">
@@ -17,7 +17,7 @@ const Menu = (): JSX.Element => (
         <a href="#projects">Projets</a>
       </li>
       <li>
-        <a href="#compétences">Compétences</a>
+        <a href="#skills">Compétences</a>
         
       </li>
       <li>

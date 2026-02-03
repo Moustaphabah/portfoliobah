@@ -1,7 +1,5 @@
 import React from 'react';
 import './projectCart.css';
-import projectTrois from '../../assets/proj-trois.png';
-import projetDeux from '../../assets/proj-deux.png';
 import projetUn from '../../assets/proj-un.png';
 
 interface ProjectCardProps {
@@ -9,8 +7,9 @@ interface ProjectCardProps {
   description?: string;
   image?: string;
   href?: string;
+  hrefGithub?: string;
   btnText?: string;
-  tech?: string[];
+  tech?: React.ReactNode[];
 }
 
 export default function ProjectCard({
@@ -18,9 +17,10 @@ export default function ProjectCard({
   description = 'Description du projet',
   image = projetUn,
   href = '#',
+  hrefGithub = '#',
   btnText = 'Voir le projet',
   tech = [],
-}: ProjectCardProps): JSX.Element {
+}: ProjectCardProps) {
   return (
     <article className="project-card">
       <a href={href} aria-label={title}>
@@ -31,13 +31,14 @@ export default function ProjectCard({
         <p>{description}</p>
         {tech && tech.length > 0 && (
           <div className="project-tech">
-            {tech.map((t) => (
-              <span key={t} className="tech-tag">{t}</span>
+            {tech.map((t, index) => (
+              <span key={index} className="tech-tag">{t}</span>
             ))}
           </div>
         )}
         <div className="project-links">
           <a href={href} target='_blank' rel="noopener noreferrer" className="project-btn">{btnText}</a>
+          <a href={hrefGithub} target='_blank' rel="noopener noreferrer" className="project-btn">voir le git</a>
         </div>
       </div>
     </article>

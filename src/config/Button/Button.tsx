@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button = ({ title, onClick, children, className }: ButtonProps): JSX.Element => {
+const Button = ({ title, onClick, children, className }: ButtonProps)=> {
   return (
     <button type="button" title={title} onClick={onClick} className={className}>
       {children ?? title}

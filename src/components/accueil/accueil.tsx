@@ -1,7 +1,7 @@
 import "./accueil.css";
 import Button from "../../config/Button/Button";
 
-function Accueil(): JSX.Element {
+function Accueil(){
   return (
     <section className="accueil">
       <div className="contenu-accueil">

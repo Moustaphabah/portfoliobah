@@ -23,3 +23,10 @@ footer {
    border-radius: 5px;
 
 }
+
+.footerBrandPortfolio {
+   background: linear-gradient(to right,  #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 12px;
+}

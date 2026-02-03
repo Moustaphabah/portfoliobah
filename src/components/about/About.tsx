@@ -1,8 +1,8 @@
-import React from 'react';
+
 import photo from "../../assets/photo_bah.webp";
 import "./about.css";
 
-function About(): JSX.Element {
+function About(){
   return (
     <section className="about-section about" id='about'>
       <div className="about-profile">

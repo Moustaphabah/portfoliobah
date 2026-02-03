@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './SkillsCarousel.css'
 
 import Marquee from './Marquee'
@@ -17,7 +17,7 @@ const techStack: { name: string; icon: IconType }[] = [
   { name: 'HTML', icon: FaHtml5 },
 ]
 
-export default function SkillsCarousel(): JSX.Element {
+export default function SkillsCarousel() {
   return (
     <Marquee speed={60} pauseOnHover className="py-10 bg-slate-50">
       {techStack.map((tech) => {

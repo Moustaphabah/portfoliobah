@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import Header from './components/header/Header'
 import About from './components/about/About'
 import Projects from './components/Projects/Projects'
@@ -10,7 +10,7 @@ import SkillsCard from './components/SkillsCard/SkillsCard'
 import SkillsCarousel from './components/SkillsCard/SkillsCarousel'
 
 
-function App(): JSX.Element {
+function App() {
     return (
         <div>
             <Header />
