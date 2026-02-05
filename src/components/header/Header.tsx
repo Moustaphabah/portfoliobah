@@ -5,26 +5,19 @@ import "./header.css";
 const Menu = () => (
   <nav className="Menu">
     <p className="portfolio">Portfolio</p>
-    <ul className="Menu__list">
-      <li>
-        <a href="#accueil">Accueil</a>
-      </li>
-      <li>
-        <a href="#about">À propos
-        </a>
-      </li>
-      <li>
-        <a href="#projects">Projets</a>
-      </li>
-      <li>
-        <a href="#skills">Compétences</a>
-        
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-        
-      </li>
-    </ul>
+   <ul className="Menu__list">
+  <li>
+    <a href="#about" className="btn btn-border-reveal">À propos</a>
+  </li>
+  <li>
+    <a href="#projects" className="btn btn-border-reveal">Projets</a>
+  </li>
+  <li>
+    <a href="#SkillsCarousel" className="btn btn-border-reveal">Compétences</a>
+  </li>
+ 
+</ul>
+
     <Button className="contact-button" title="Contact" onClick={() => (window.document.location.hash = "#contact") }>
        Contact
     </Button>

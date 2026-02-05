@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -51,11 +52,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ff6f61;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #ff6f61;
 }
 
 body {
@@ -81,14 +82,14 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ff6f61;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 main {
-  background-color: black;
+  background-color: #1a1a1a;
 }
 
 @media (prefers-color-scheme: light) {
@@ -97,11 +98,28 @@ main {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: black;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+.pSkillsCard{
+  color: #928f87;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.titleCompetences{
+   background: linear-gradient(to right, #ffc52c, #ff9a05);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 4.1rem;
+   margin-bottom: 1rem;
+   text-align: center;
 }
 
 @theme inline {
@@ -187,3 +205,6 @@ main {
     @apply bg-background text-foreground;
   }
 }
+
+
+

@@ -23,8 +23,9 @@ const projects = [
     pratiques de versionnage avec GitHub et utilisé Visual Studio Code comme environnement
     de développement pour coder et déboguer efficacement le site.`,
     image: projetUn,
-    tech: [<FaGithub  />, <FaReact />, <FaCss3Alt />],
+    tech: [<FaGithub size={30} />, <FaReact size={30} />, <FaCss3Alt size={30} />],
     github: 'https://moustaphabah.github.io/siteEvenementiel/',
+    hrefGithub:'https://github.com/Moustaphabah/siteEvenementiel.git',
     live:''
   },
   {
@@ -36,8 +37,9 @@ const projects = [
     J’ai utilisé des outils comme Lighthouse et Wave pour évaluer l’efficacité des améliorations, et j’ai produit un rapport comparatif avant et après, illustrant les résultats et expliquant l’impact des changements sur la performance,
      l’accessibilité et le référencement`,
     image: projetDeux,
-    tech: [<FaHtml5 size={70} />, <FaCss3Alt />, <SiLighthouse />],
+    tech: [<FaHtml5 size={30} />, <FaCss3Alt size={30} />, <SiLighthouse size={30} />],
     github: 'https://moustaphabah.github.io/nina/',
+    hrefGithub:'https://github.com/Moustaphabah/nina.git',
     live:''
   },
   {
@@ -46,8 +48,9 @@ const projects = [
     description: `Dans ce projet, j’ai consolidé mes compétences en développement web moderne en réalisant un portfolio complet, professionnel et responsive en utilisant React avec Vite. J’ai structuré le site pour présenter efficacement mes projets, compétences et parcours, tout en garantissant une expérience utilisateur optimale sur différents appareils.
   Ce portfolio met en valeur mon profil auprès de recruteurs et clients, et démontre mes capacités à créer un site fonctionnel, esthétique et performant. J’ai également préparé une présentation orale structurée pour présenter mon travail de manière claire et professionnelle.`,
     image: projectTrois,
-    tech: [<BiLogoTypescript />, <SiVite />, <FaReact />, <FaCss3Alt />, <FaGithub />],
+    tech: [<BiLogoTypescript size={30} />, <SiVite size={30} />, <FaReact size={30} />, <FaCss3Alt size={30} />, <FaGithub size={30} />],
     github: '',
+    hrefGithub:'https://github.com/Moustaphabah/portfoliobah.git',
     live:''
   }
 ];

@@ -22,7 +22,7 @@ export default function Projects(){
 						tech={p.tech}
 						href={p.live || p.github || '#'}
 						btnText='Voir'
-						hrefGithub={p.github || '#'}
+						hrefGithub={p.hrefGithub || '#'}
 					/>
 				))}
 			</div>

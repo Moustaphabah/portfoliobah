@@ -57,3 +57,79 @@
   background: linear-gradient(to right,  #ffc52c, #ff9a05);
 
 }
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* enlève le soulignement */
+}
+
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* 3. Border Reveal */
+.btn-border-reveal {
+  background-color: transparent;
+  color: #ff9a05;
+  border: 2px solid #ff9a05;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-border-reveal::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ff9a05;
+  transition: width 0.3s ease;
+  z-index: 0;
+}
+
+.btn-border-reveal:hover::after {
+  width: 100%;
+}
+
+.btn-border-reveal {
+  background-color: transparent;
+  color: #ff9a05;
+  border: 2px solid #ff9a05;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1; /* mettre le bouton au-dessus du ::after */
+}
+.btn-border-reveal::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ff9a05;
+  transition: width 0.3s ease;
+  z-index: -1; /* placer le pseudo-élément derrière le bouton */
+}
+

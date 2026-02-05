@@ -1,4 +1,4 @@
-
+import image from '../../assets/1-f273d416.ico';
 import './footer.css';
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react";
@@ -15,7 +15,7 @@ export function Component() {
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
           <FooterBrand className="footerBrandPortfolio"
             href="Portfolio"
-            src="src/assets/1-f273d416.ico"
+            src={image}
             alt="Portfolio"
             name="Portfolio"
           />
@@ -32,13 +32,7 @@ export function Component() {
         <div className="flex justify-center items-center gap-4">
           <FooterCopyright href="#" by="Moustapha Bah" year={2026} />
 
-          {/* Bouton flèche vers le haut */}
-          <button 
-            onClick={scrollToTop} 
-            className="scroll-top-button"
-          >
-            <AiOutlineArrowUp size={24} />
-          </button>
+          
         </div>
       </div>
     </Footer>

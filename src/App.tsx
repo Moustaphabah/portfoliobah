@@ -20,6 +20,9 @@ function App() {
                 <Projects />
                 <Contact /> 
                                 <SkillsCard>
+                                    <h1 className='titleCompetences'>Compétences</h1>
+                                    <p className='pSkillsCard'>Voici un aperçu de mes compétences
+                                         techniques : React, JavaScript, TypeScript, Vite, HTML, CSS, Git et GitHub.</p>
                                     <SkillsCarousel />
                                 </SkillsCard>
                 <Footer/>
