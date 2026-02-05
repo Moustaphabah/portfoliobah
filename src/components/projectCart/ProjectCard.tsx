@@ -1,6 +1,7 @@
 import React from 'react';
 import './projectCart.css';
 import projetUn from '../../assets/proj-un.png';
+import { FaGithub } from "react-icons/fa6";
 
 interface ProjectCardProps {
   title?: string;
@@ -38,7 +39,7 @@ export default function ProjectCard({
         )}
         <div className="project-links">
           <a href={href} target='_blank' rel="noopener noreferrer" className="project-btn">{btnText}</a>
-          <a href={hrefGithub} target='_blank' rel="noopener noreferrer" className="project-btn">voir le git</a>
+          <a href={hrefGithub} target='_blank' rel="noopener noreferrer" className="project-btn"><FaGithub /></a>
         </div>
       </div>
     </article>
