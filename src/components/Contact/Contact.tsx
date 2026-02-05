@@ -17,7 +17,7 @@ function Contact() {
           <aside className="contact-info">
             <h3 className="information">Informations</h3>
             <ul>
-              <li>Email : exemple@mail.com</li>
+              <li>Email : mmbb94@gmail.com</li>
               <li>Téléphone : 06 12 34 56 78</li>
               <li>Localisation : Paris, France</li>
             </ul>
