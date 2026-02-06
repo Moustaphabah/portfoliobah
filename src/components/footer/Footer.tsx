@@ -1,7 +1,7 @@
 import image from '../../assets/1-f273d416.ico';
 import './footer.css';
 import { AiOutlineArrowUp } from "react-icons/ai";
-import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react";
+import { Footer, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react";
 
 export function Component() {
   // Fonction pour faire défiler vers le haut
