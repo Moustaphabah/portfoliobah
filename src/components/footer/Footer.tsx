@@ -13,12 +13,12 @@ export function Component() {
     <Footer container>
       <div className="w-full text-center">
         <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <FooterBrand className="footerBrandPortfolio"
-            href="Portfolio"
-            src={image}
-            alt="Portfolio"
-            name="Portfolio"
-          />
+          <div className="footerBrandPortfolio">
+            <a href="Portfolio" className="flex items-center">
+              <img src={image} alt="Portfolio" width={32} height={26} className="mr-3" />
+              <span className="font-semibold">Portfolio</span>
+            </a>
+          </div>
           <FooterLinkGroup className="lienFooter">
             <FooterLink href="#">Projets</FooterLink>
             <FooterLink href="#">À propos</FooterLink>
@@ -29,10 +29,16 @@ export function Component() {
         <FooterDivider />
 
         {/* Section Copyright + Bouton “Remonter” */}
-        <div className="flex justify-center items-center gap-4">
+        <div className="flex justify-center items-center gap-4 moustaphaBahFooter">
           <FooterCopyright href="#" by="Moustapha Bah" year={2026} />
-
-          
+          {/* Bouton flèche vers le haut */}
+          <button 
+            onClick={scrollToTop} 
+            className="scroll-top-button"
+            aria-label="Remonter en haut"
+          >
+            <AiOutlineArrowUp size={24} />
+          </button>
         </div>
       </div>
     </Footer>

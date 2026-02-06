@@ -5,6 +5,9 @@
   align-items: center;       /* centre horizontalement */
   min-height: 100vh;         
   padding: 2rem;             /* un peu plus que 2px pour respirer */
+  box-sizing: border-box;
+  max-width: 1200px;        /* limite la largeur de la section accueil */
+  margin: 0 auto;           /* centre la section comme les autres */
   text-align: center;
   gap: 1.5rem;               /* espace uniforme entre tous les éléments */
 }
@@ -110,22 +113,16 @@
 
 /* Optionnel : ciblage plus précis pour cette section */
 .accueil .bonjour {
- 
   position: relative;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    
-   
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-
-animation: 
-    typewriter 5s steps(50) 0.1s  normal both, 
-    blinkingCursor 500ms steps(50) 10 normal both;
-
-  
+  width: 24em;
+  max-width: 100%;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  white-space: nowrap;
+  overflow: hidden;
+  /* removed translateY which could shift layout */
+  animation: typewriter 5s steps(50) 0.1s normal both,
+             blinkingCursor 500ms steps(50) 10 normal both;
 }
 
 @keyframes typewriter {

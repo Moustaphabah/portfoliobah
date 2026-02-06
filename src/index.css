@@ -35,6 +35,8 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  /* site background variable for uniform background across components */
+  --site-bg: #1a1a1a;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -63,6 +65,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--site-bg);
 }
 
 h1 {
@@ -89,7 +92,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 main {
-  background-color: #1a1a1a;
+  background: var(--site-bg);
 }
 
 @media (prefers-color-scheme: light) {

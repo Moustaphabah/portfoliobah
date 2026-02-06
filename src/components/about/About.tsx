@@ -7,7 +7,7 @@ function About(){
     <section className="about-section about" id='about'>
       <div className="about-profile">
         <div className="photo-container">
-          <img className="about-photo" src={photo} alt="Photo" />
+          <img className="about-photo" src={photo} alt="Photo de Bah" height={400} width={600} loading="lazy" />
         </div>
         <div className="about-bio">
           <h1 className="a-propos">À propos</h1>

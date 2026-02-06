@@ -23,7 +23,7 @@ function Accueil(){
           <Button
             className="bouton-voir-projets"
             onClick={() => {
-              const element = document.getElementById("projets");
+              const element = document.getElementById("projects");
               element?.scrollIntoView({ behavior: "smooth" });
             }}
           >
